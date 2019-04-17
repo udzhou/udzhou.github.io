@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>人工智能计算器小程序简介 | 当下生活瓶</title>
+<title>图片处理之裁剪、合并、压缩，以及常用软件推荐 | 当下生活瓶</title>
 <meta name="description" content="愿你的生活每天都有鲜花相伴，心情不好的时候，抬头瞄一眼 什么事都过去了，因为美好的生活不值得你为不好的事或人而浪费 ~ 加油 ~ 开心 ~">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -80,34 +80,68 @@
       <div class="sm-12 md-8 col">
         <div class="paper">
           <article class="article">
-            <h1>人工智能计算器小程序简介</h1>
+            <h1>图片处理之裁剪、合并、压缩，以及常用软件推荐</h1>
             <p class="article-meta">
-              2019-04-16 17:35:02
+              2019-04-17 09:41:06
               
-                <a href="https://udzhou.github.io/tag/tool/index.html" class="badge warning">
-                  工具瓶
+                <a href="https://udzhou.github.io/tag/technology/index.html" class="badge secondary">
+                  技术瓶
                 </a>
               
             </p>
             
             <div class="post-content">
-              <p>生活中很多细小的计算需求，使用频率也不是很高，但当你使用时到处去寻找这种小工具，既浪费时间寻找也达不到你满意的效果，所以我把一些常见的计算工具放到了小程序中，让大家方便快捷的使用。</p>
-<!-- more -->
-<p>下面介绍这款小程序的一些功能：</p>
+              <ol>
+<li>安装 <a href="http://www.imagemagick.org/script/index.php">ImageMagick</a> 图片处理软件，基本解决大多数图片处理问题
 <ul>
-<li>个税计算</li>
-<li>房贷计算</li>
-<li>利率转换</li>
-<li>电费计算</li>
-<li>BMI 计算</li>
-<li>步行计算</li>
-<li>进制转换</li>
-<li>尺子测量</li>
+<li>macOS 下通过 <a href="https://github.com/Homebrew/brew">Homebrew</a> 安装：brew install imagemagick</li>
+<li>windows 下载安装包（可以在官网找到），比如：<a href="https://www.imagemagick.org/download/binaries/ImageMagick-7.0.7-31-Q16-x64-static.exe">ImageMagick-7.0.7-31-Q16-x64-static.exe</a></li>
 </ul>
-<p>未来将继续添加更多常见计算功能，体验小程序请长按下方图片识别二维码</p>
-<p><img src="https://udzhou.github.io/post-images/1555407498903.jpg" alt="长按或扫描识别二维码"></p>
-<p>获取更多生活便利信息，请关注公众号   <em><strong><a href="https://mp.weixin.qq.com/s/tV_PNShWaaVlY2XuDHzjqg">当下生活瓶</a></strong></em>
-<img src="https://udzhou.github.io/post-images/1555407089611.jpg" alt="长按或扫描识别二维码"></p>
+</li>
+<li>安装后命令行会有 convert 命令来处理图片:
+<ul>
+<li>imagemagick 的 convert 命令通过 crop 参数，可以把一幅大图片分成若干块大小一样的图, 同时也可以在大图上截取一块图片来,命令格式为: convert 原始图片 -crop widthxheight+x+y 目标图片<pre><code>convert src.jpg -crop 100x100 dest.jpg // 把原始图片分割成多张小图
+// 假设src.jpg的大小是300x200,执行命令后将得到名为dest-0.jpg、dest-1.jpg...dest-5.jpg
+// 的6张大小为100x100的小图片。注意如果尺寸不是目标图片的整数倍，
+// 那么右边缘和下边缘的一部分图片就用实际尺寸
+
+convert src.jpg -crop 100x80+50+30 dest.jpg // 在原始图片上剪裁一张指定尺寸的小图
+// 在原始图片的上距离上部30像素左部50为起点的位置,分别向左向下截取一块大小为100x80的图片。
+// 如果x相对于坐标，宽度不够100，那就取实际值。
+
+// 在原始图上截取中心部分一块100x80的图片
+convert src.jpg -gravity center -crop 100x80+0+0 dest.jpg
+// 在原始图上截取右下角距离下边缘10个像素，右边缘5个像素一块100x80的图片
+convert src.jpg -gravity southeast -crop 100x80+10+5 dest.jpg
+</code></pre>
+</li>
+<li>图片格式 png 转 jpg<pre><code>convert src.png dest.jpg
+</code></pre>
+</li>
+<li>图片压缩、缩放等<pre><code>// 将图像的像素改为1024*768，注意1024与768之间是小写字母x
+convert -resize 1024x768  input.jpg   output.jpg
+// 将图像的缩减为原来的50%*50%
+convert -sample 50%x50%  input.jpg  output.jpg
+// 去除多余信息
+convert -strip input.jpg output.jpg
+// 适量调节JPG图片的压缩比会减少图片大小，肉眼并不会分辨出质量被压缩后的图片。通常75%是最佳比例
+convert -quality 75% input.jpg output.jpg
+// 旋转图片90度
+convert -rotate 90 src.jpg dest.jpg
+</code></pre>
+</li>
+</ul>
+</li>
+<li><a href="https://www.codeandweb.com/texturepacker">TexturePacker</a> 小图合成大图，节省空间，能生成不同格式，比如 cocos2dx 里的 plist 文件</li>
+<li>png 图片压缩软件：
+<ul>
+<li><a href="https://pngmini.com/">ImageAlpha</a> 只支持 macOS</li>
+<li><a href="https://tinypng.com/">tinypng</a></li>
+<li><a href="https://pngquant.org/">pngquant</a></li>
+<li><a href="http://upng.photopea.com/">upng</a></li>
+</ul>
+</li>
+</ol>
 
             </div>
           </article>
@@ -118,9 +152,9 @@
               <div class="next">
                 下一篇
               </div>
-              <a href="https://udzhou.github.io/post/xian-hua-zuo-cheng-gan-hua-mei-dao-bao-zha/index.html">
+              <a href="https://udzhou.github.io/post/upRL5--1-/index.html">
                 <h3 class="post-title">
-                  鲜花做成干花，美到爆炸
+                  nodejs 开发环境搭建以及sublime插件推荐
                 </h3>
               </a>
             </div>
@@ -227,7 +261,7 @@
     </div>
     <div class="row">
       
-        <a href="https://udzhou.github.io/tag/technology/index.html" class="badge success">
+        <a href="https://udzhou.github.io/tag/technology/index.html" class="badge ">
           技术瓶
         </a>
       
@@ -235,7 +269,7 @@
           好物瓶
         </a>
       
-        <a href="https://udzhou.github.io/tag/tool/index.html" class="badge ">
+        <a href="https://udzhou.github.io/tag/tool/index.html" class="badge warning">
           工具瓶
         </a>
       

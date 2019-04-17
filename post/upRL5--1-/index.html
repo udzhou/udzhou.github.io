@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>人工智能计算器小程序简介 | 当下生活瓶</title>
+<title>nodejs 开发环境搭建以及sublime插件推荐 | 当下生活瓶</title>
 <meta name="description" content="愿你的生活每天都有鲜花相伴，心情不好的时候，抬头瞄一眼 什么事都过去了，因为美好的生活不值得你为不好的事或人而浪费 ~ 加油 ~ 开心 ~">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -80,34 +80,127 @@
       <div class="sm-12 md-8 col">
         <div class="paper">
           <article class="article">
-            <h1>人工智能计算器小程序简介</h1>
+            <h1>nodejs 开发环境搭建以及sublime插件推荐</h1>
             <p class="article-meta">
-              2019-04-16 17:35:02
+              2019-04-17 09:40:33
               
-                <a href="https://udzhou.github.io/tag/tool/index.html" class="badge warning">
-                  工具瓶
+                <a href="https://udzhou.github.io/tag/technology/index.html" class="badge success">
+                  技术瓶
                 </a>
               
             </p>
             
             <div class="post-content">
-              <p>生活中很多细小的计算需求，使用频率也不是很高，但当你使用时到处去寻找这种小工具，既浪费时间寻找也达不到你满意的效果，所以我把一些常见的计算工具放到了小程序中，让大家方便快捷的使用。</p>
-<!-- more -->
-<p>下面介绍这款小程序的一些功能：</p>
+              <ol>
+<li>使用 <a href="https://github.com/creationix/nvm">nvm</a> 安装 nodejs ，以及版本管理，不推荐安装包安装</li>
+<li>npm 设置<pre><code>// 由于官方 npm 地址访问过慢，故推荐淘宝源
+npm --registry https://registry.npm.taobao.org install express // 临时使用
+npm config set registry https://registry.npm.taobao.org // 持久使用
+// 配置后可通过下面方式来验证是否成功 
+npm config get registry
+
+// npm查看全局安装过的包
+npm list -g --depth 0
+</code></pre>
+</li>
+<li>安装进程管理工具pm2<pre><code>npm install -g pm2
+pm2 start index.js --name test // 启动某个项目
+pm2 logs // 查看日志
+pm2 start ecosystem.json // 配置文件启动
+{
+  /**
+   * Application configuration section
+   * http://pm2.keymetrics.io/docs/usage/application-declaration/
+   */
+  &quot;apps&quot;: [{
+  &quot;name&quot;: &quot;xx_game-1&quot;,
+  &quot;script&quot;: &quot;index.js&quot;,
+  &quot;cwd&quot;: &quot;./game&quot;,
+  &quot;watch&quot;: false,
+  &quot;ignore_watch&quot;: [&quot;node_modules&quot;, &quot;.git&quot;, &quot;.svn&quot;],
+  &quot;env&quot;: {
+    &quot;PORT&quot;: 7701,
+    &quot;ISMASTER&quot;: 1,
+    &quot;SERVID&quot;: 1
+  },
+  &quot;env_development&quot;: {},
+  &quot;exec_mode&quot;: &quot;fork&quot;,
+  &quot;merge_logs&quot;: true,
+  &quot;autorestart&quot;: false,
+  &quot;max_restarts&quot;: 1
+  }]
+}
+
+
+</code></pre>
+</li>
+<li>sublime text3 插件安装
 <ul>
-<li>个税计算</li>
-<li>房贷计算</li>
-<li>利率转换</li>
-<li>电费计算</li>
-<li>BMI 计算</li>
-<li>步行计算</li>
-<li>进制转换</li>
-<li>尺子测量</li>
+<li>先安装插件管理工具 <a href="https://packagecontrol.io/">Package Control</a> ，<a href="https://packagecontrol.io/installation">安装教程</a></li>
+<li>安装格式化代码插件 html/css/js prettify , 轻松统一格式代码</li>
+<li>安装插件 SublimeLinter 检查代码错误，并安装 SublimeLinter-jshint 检查js代码，同时需要 npm install -g jshint , 点击 SublimeLinter 用户配置如下：<pre><code>{
+    &quot;linters&quot;: {
+        &quot;jshint&quot;: {
+            &quot;@disable&quot;: false,
+            &quot;args&quot;: [
+                &quot;--config&quot;,
+                &quot;D:\\config\\jshintrc&quot; // 你的jshintrc配置路径
+            ],
+            &quot;excludes&quot;: []
+        },
+    },
+}
+
+// jshintrc 文件例子
+{
+    // 提示项定制
+    &quot;eqeqeq&quot;: false,    // 不提示使用 == 和 !== 的一般比较
+    &quot;-W041&quot;: false,     // 不提示使用 == 和 !== 与''或0的比较
+    &quot;eqnull&quot;: true,     // 不提示和 null 比较
+    &quot;sub&quot;: true,        // 不提示使用 [] 形式访问对象属性
+    &quot;node&quot;: true, // 感知nodejs
+    &quot;shadow&quot;: true,
+    &quot;loopfunc&quot;: true,
+    &quot;-W065&quot;: true,
+    &quot;-W032&quot;: true,
+    &quot;esversion&quot;: 6, // es版本
+    &quot;bitwise&quot;: true,    // 提示位操作符的使用（防止逻辑运算符笔误）
+    &quot;curly&quot;: true,      // 提示条件语句和循环语句的语句体没有使用大括号包裹
+    &quot;immed&quot;: true,      // 提示立即执行函数没有使用小括号包裹
+    &quot;latedef&quot;: &quot;nofunc&quot;,// 提示变量使用先于变量声明（但函数声明除外）
+    &quot;noarg&quot;: true,      // 提示 arguments.caller 和 arguments.callee 的使用
+    &quot;undef&quot;: true,      // 提示变量未声明就使用（跨文件全局变量请在predef中显式列出）
+    &quot;unused&quot;: true,     // 提示未使用的变量
+    // 环境感知
+    &quot;browser&quot;: true,    // 感知浏览器API，对应变量默认为已声明的，如 document, navigator, FileReader
+    &quot;jquery&quot;: true,     // 感知jQuery API
+    &quot;lastsemic&quot;: true,
+    &quot;predef&quot;: [         // 列出已知的全局变量，默认为已声明的
+        &quot;cc&quot;,
+        &quot;jsb&quot;,
+        &quot;ccui&quot;
+    ]
+}
+</code></pre>
+</li>
 </ul>
-<p>未来将继续添加更多常见计算功能，体验小程序请长按下方图片识别二维码</p>
-<p><img src="https://udzhou.github.io/post-images/1555407498903.jpg" alt="长按或扫描识别二维码"></p>
-<p>获取更多生活便利信息，请关注公众号   <em><strong><a href="https://mp.weixin.qq.com/s/tV_PNShWaaVlY2XuDHzjqg">当下生活瓶</a></strong></em>
-<img src="https://udzhou.github.io/post-images/1555407089611.jpg" alt="长按或扫描识别二维码"></p>
+</li>
+</ol>
+<p>5.常用npm包推荐</p>
+<pre><code>{
+      &quot;async&quot;: &quot;^2.1.4&quot;,
+      &quot;ioredis&quot;: &quot;^3.1.4&quot;,
+      &quot;jsonwebtoken&quot;: &quot;^7.1.9&quot;,
+      &quot;lodash&quot;: &quot;^4.17.2&quot;,
+      &quot;log4js&quot;: &quot;^1.0.1&quot;,
+      &quot;moment&quot;: &quot;^2.17.1&quot;,
+      &quot;mysql&quot;: &quot;^2.12.0&quot;,
+      &quot;nanoid&quot;: &quot;^0.2.0&quot;,
+      &quot;request&quot;: &quot;^2.79.0&quot;,
+      &quot;ws&quot;: &quot;^3.1.0&quot;,
+      &quot;xml2js&quot;: &quot;^0.4.19&quot;
+}
+</code></pre>
 
             </div>
           </article>
@@ -118,9 +211,9 @@
               <div class="next">
                 下一篇
               </div>
-              <a href="https://udzhou.github.io/post/xian-hua-zuo-cheng-gan-hua-mei-dao-bao-zha/index.html">
+              <a href="https://udzhou.github.io/post/hRU6u2sBx/index.html">
                 <h3 class="post-title">
-                  鲜花做成干花，美到爆炸
+                  Windows下终端软件推荐（颜值第一）
                 </h3>
               </a>
             </div>
@@ -231,11 +324,11 @@
           技术瓶
         </a>
       
-        <a href="https://udzhou.github.io/tag/goodthing/index.html" class="badge secondary">
+        <a href="https://udzhou.github.io/tag/goodthing/index.html" class="badge success">
           好物瓶
         </a>
       
-        <a href="https://udzhou.github.io/tag/tool/index.html" class="badge ">
+        <a href="https://udzhou.github.io/tag/tool/index.html" class="badge warning">
           工具瓶
         </a>
       

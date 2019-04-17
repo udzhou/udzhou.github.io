@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>人工智能计算器小程序简介 | 当下生活瓶</title>
+<title>安装golang包被墙解决方法 | 当下生活瓶</title>
 <meta name="description" content="愿你的生活每天都有鲜花相伴，心情不好的时候，抬头瞄一眼 什么事都过去了，因为美好的生活不值得你为不好的事或人而浪费 ~ 加油 ~ 开心 ~">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -80,34 +80,30 @@
       <div class="sm-12 md-8 col">
         <div class="paper">
           <article class="article">
-            <h1>人工智能计算器小程序简介</h1>
+            <h1>安装golang包被墙解决方法</h1>
             <p class="article-meta">
-              2019-04-16 17:35:02
+              2019-04-17 09:39:28
               
-                <a href="https://udzhou.github.io/tag/tool/index.html" class="badge warning">
-                  工具瓶
+                <a href="https://udzhou.github.io/tag/technology/index.html" class="badge secondary">
+                  技术瓶
                 </a>
               
             </p>
             
             <div class="post-content">
-              <p>生活中很多细小的计算需求，使用频率也不是很高，但当你使用时到处去寻找这种小工具，既浪费时间寻找也达不到你满意的效果，所以我把一些常见的计算工具放到了小程序中，让大家方便快捷的使用。</p>
-<!-- more -->
-<p>下面介绍这款小程序的一些功能：</p>
-<ul>
-<li>个税计算</li>
-<li>房贷计算</li>
-<li>利率转换</li>
-<li>电费计算</li>
-<li>BMI 计算</li>
-<li>步行计算</li>
-<li>进制转换</li>
-<li>尺子测量</li>
-</ul>
-<p>未来将继续添加更多常见计算功能，体验小程序请长按下方图片识别二维码</p>
-<p><img src="https://udzhou.github.io/post-images/1555407498903.jpg" alt="长按或扫描识别二维码"></p>
-<p>获取更多生活便利信息，请关注公众号   <em><strong><a href="https://mp.weixin.qq.com/s/tV_PNShWaaVlY2XuDHzjqg">当下生活瓶</a></strong></em>
-<img src="https://udzhou.github.io/post-images/1555407089611.jpg" alt="长按或扫描识别二维码"></p>
+              <p>1.使用ss，但要设置如下代理：</p>
+<pre><code>// 执行命令前面设置代理
+http_proxy=127.0.0.1:1080 https_proxy=127.0.0.1:1080 go get -u google.golang.org/grpc
+// 包管理dep安装
+http_proxy=127.0.0.1:1080 https_proxy=127.0.0.1:1080 dep ensure -add google.golang.org/grpc
+</code></pre>
+<p>2.使用vpn
+3.如果不能翻墙，以grpc包为例：</p>
+<pre><code>// 一般都在github上有对应包源码,下载下来并重命名
+git clone https://github.com/grpc/grpc-go.git $GOPATH/src/google.golang.org/grpc
+// 然后
+go install google.golang.org/grpc
+</code></pre>
 
             </div>
           </article>
@@ -118,9 +114,9 @@
               <div class="next">
                 下一篇
               </div>
-              <a href="https://udzhou.github.io/post/xian-hua-zuo-cheng-gan-hua-mei-dao-bao-zha/index.html">
+              <a href="https://udzhou.github.io/post/PJIgUHYD3/index.html">
                 <h3 class="post-title">
-                  鲜花做成干花，美到爆炸
+                  ubuntu服务器简要设置
                 </h3>
               </a>
             </div>
@@ -227,19 +223,19 @@
     </div>
     <div class="row">
       
-        <a href="https://udzhou.github.io/tag/technology/index.html" class="badge success">
+        <a href="https://udzhou.github.io/tag/technology/index.html" class="badge warning">
           技术瓶
         </a>
       
-        <a href="https://udzhou.github.io/tag/goodthing/index.html" class="badge secondary">
+        <a href="https://udzhou.github.io/tag/goodthing/index.html" class="badge warning">
           好物瓶
         </a>
       
-        <a href="https://udzhou.github.io/tag/tool/index.html" class="badge ">
+        <a href="https://udzhou.github.io/tag/tool/index.html" class="badge success">
           工具瓶
         </a>
       
-        <a href="https://udzhou.github.io/tag/vase/index.html" class="badge ">
+        <a href="https://udzhou.github.io/tag/vase/index.html" class="badge warning">
           小花瓶
         </a>
       

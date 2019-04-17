@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>人工智能计算器小程序简介 | 当下生活瓶</title>
+<title>阿里云ECS开启shadowsocks失败解决办法 | 当下生活瓶</title>
 <meta name="description" content="愿你的生活每天都有鲜花相伴，心情不好的时候，抬头瞄一眼 什么事都过去了，因为美好的生活不值得你为不好的事或人而浪费 ~ 加油 ~ 开心 ~">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -80,34 +80,59 @@
       <div class="sm-12 md-8 col">
         <div class="paper">
           <article class="article">
-            <h1>人工智能计算器小程序简介</h1>
+            <h1>阿里云ECS开启shadowsocks失败解决办法</h1>
             <p class="article-meta">
-              2019-04-16 17:35:02
+              2019-04-17 09:42:30
               
-                <a href="https://udzhou.github.io/tag/tool/index.html" class="badge warning">
-                  工具瓶
+                <a href="https://udzhou.github.io/tag/technology/index.html" class="badge warning">
+                  技术瓶
                 </a>
               
             </p>
             
             <div class="post-content">
-              <p>生活中很多细小的计算需求，使用频率也不是很高，但当你使用时到处去寻找这种小工具，既浪费时间寻找也达不到你满意的效果，所以我把一些常见的计算工具放到了小程序中，让大家方便快捷的使用。</p>
-<!-- more -->
-<p>下面介绍这款小程序的一些功能：</p>
-<ul>
-<li>个税计算</li>
-<li>房贷计算</li>
-<li>利率转换</li>
-<li>电费计算</li>
-<li>BMI 计算</li>
-<li>步行计算</li>
-<li>进制转换</li>
-<li>尺子测量</li>
-</ul>
-<p>未来将继续添加更多常见计算功能，体验小程序请长按下方图片识别二维码</p>
-<p><img src="https://udzhou.github.io/post-images/1555407498903.jpg" alt="长按或扫描识别二维码"></p>
-<p>获取更多生活便利信息，请关注公众号   <em><strong><a href="https://mp.weixin.qq.com/s/tV_PNShWaaVlY2XuDHzjqg">当下生活瓶</a></strong></em>
-<img src="https://udzhou.github.io/post-images/1555407089611.jpg" alt="长按或扫描识别二维码"></p>
+              <ol>
+<li>安装shadowsocks请参照官网流程<pre><code>// github地址
+// https://github.com/shadowsocks/shadowsocks/tree/master
+</code></pre>
+</li>
+<li>配置文件里server一定要写成&quot;0.0.0.0&quot;,配置参考如下：<pre><code>{
+		&quot;server&quot;: &quot;0.0.0.0&quot;, // 一定要这样
+		&quot;server_port&quot;: 6666, // 这里对应端口号，第三步要设置
+		&quot;local_address&quot;: &quot;127.0.0.1&quot;,
+		&quot;local_port&quot;: 1080,
+		&quot;password&quot;: &quot;123456&quot;,
+		&quot;timeout&quot;: 600,
+		&quot;method&quot;: &quot;aes-256-cfb&quot;
+}
+</code></pre>
+</li>
+<li>ECS有安全组规则，请配置打开你配置的端口</li>
+<li>如果启动时有如下报错 AttributeError: /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1: undefined symbol: EVP_CIPHER_CTX_cleanup<pre><code>	load_openssl()
+	File &quot;/usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py&quot;, line 52, in load_openssl
+		libcrypto.EVP_CIPHER_CTX_cleanup.argtypes = (c_void_p,)
+	File &quot;/usr/lib/python2.7/ctypes/__init__.py&quot;, line 379, in __getattr__
+		func = self.__getitem__(name)
+	File &quot;/usr/lib/python2.7/ctypes/__init__.py&quot;, line 384, in __getitem__
+		func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1: undefined symbol: EVP_CIPHER_CTX_cleanup
+</code></pre>
+</li>
+</ol>
+<p>仔细查看报错原因:在Python2.7中的openssl文件中,下面这个函数没有定义,具体就是这个哥们: EVP_CIPHER_CTX_cleanup</p>
+<p>更深层的是是由于在openssl1.1.0版本中，废弃了EVP_CIPHER_CTX_cleanup函数,要用这个函数EVP_CIPHER_CTX_reset()代替;</p>
+<p>解决办法</p>
+<p>打开openssl文件</p>
+<p>用vim打开文件：((以下路径可以根据自己的系统情况自行修改))</p>
+<p>vim /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py</p>
+<p>搜索关键字并修改</p>
+<p>直接搜索关键字:EVP_CIPHER_CTX_cleanup,一共有2处;</p>
+<p>进入编辑模式将</p>
+<p>libcrypto.EVP_CIPHER_CTX_cleanup.argtypes = (c_void_p,)</p>
+<p>改为</p>
+<p>libcrypto.EVP_CIPHER_CTX_reset.argtypes = (c_void_p,)</p>
+<p>其实就是把 cleanup 改为reset,就可以了;</p>
+<p>保存并退出,重新启动就行;</p>
 
             </div>
           </article>
@@ -118,9 +143,9 @@
               <div class="next">
                 下一篇
               </div>
-              <a href="https://udzhou.github.io/post/xian-hua-zuo-cheng-gan-hua-mei-dao-bao-zha/index.html">
+              <a href="https://udzhou.github.io/post/IGTTIOUZK/index.html">
                 <h3 class="post-title">
-                  鲜花做成干花，美到爆炸
+                  centos下mariadb启动没反应
                 </h3>
               </a>
             </div>
@@ -227,19 +252,19 @@
     </div>
     <div class="row">
       
-        <a href="https://udzhou.github.io/tag/technology/index.html" class="badge success">
+        <a href="https://udzhou.github.io/tag/technology/index.html" class="badge secondary">
           技术瓶
         </a>
       
-        <a href="https://udzhou.github.io/tag/goodthing/index.html" class="badge secondary">
+        <a href="https://udzhou.github.io/tag/goodthing/index.html" class="badge success">
           好物瓶
         </a>
       
-        <a href="https://udzhou.github.io/tag/tool/index.html" class="badge ">
+        <a href="https://udzhou.github.io/tag/tool/index.html" class="badge success">
           工具瓶
         </a>
       
-        <a href="https://udzhou.github.io/tag/vase/index.html" class="badge ">
+        <a href="https://udzhou.github.io/tag/vase/index.html" class="badge success">
           小花瓶
         </a>
       
