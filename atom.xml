@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://udzhou.github.io</id>
+    <title>当下生活瓶</title>
+    <updated>2019-12-20T07:29:26.322Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://udzhou.github.io"/>
+    <link rel="self" href="https://udzhou.github.io/atom.xml"/>
+    <subtitle>愿你的生活每天都有鲜花相伴，心情不好的时候，抬头瞄一眼 什么事都过去了，因为美好的生活不值得你为不好的事或人而浪费 ~ 加油 ~ 开心 ~</subtitle>
+    <logo>https://udzhou.github.io/images/avatar.png</logo>
+    <icon>https://udzhou.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2019, 当下生活瓶</rights>
+    <entry>
+        <title type="html"><![CDATA[写作平台推荐，随心写作，自由表达]]></title>
+        <id>https://udzhou.github.io/post/OVbVtJJkO</id>
+        <link href="https://udzhou.github.io/post/OVbVtJJkO">
+        </link>
+        <updated>2019-05-22T08:39:57.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li><a href="https://www.jianshu.com/">简书</a></li>
+</ol>
+<p>简书是一个创作社区，任何人均可以在其上进行创作。用户在简书上面可以方便的创作自己的作品，互相交流</p>
+<ol start="2">
+<li><a href="https://yuque.com/">语雀</a></li>
+</ol>
+<p>优雅高效的在线文档编辑与协同工具,让每个企业轻松拥有文档中心,阿里巴巴集团内部使用多年,众多中小企业首选。主流 Office 文件全兼容,多人协同,轻松拥有团队知识库</p>
+<ol start="3">
+<li><a href="http://note.youdao.com/">有道云笔记</a></li>
+</ol>
+<p>有道云笔记是网易出品,获得5000万用户青睐的笔记软件。提供了PC端、移动端、网页端等多端应用,用户可以随时随地对线上资料进行编辑、分享以及协同</p>
+<ol start="4">
+<li><a href="https://shimo.im/">石墨文档</a></li>
+</ol>
+<p>提供免费在线文档协作,云表格协作的团队协作工具内部沟通,高效办公,连接企业内外部.提供互联网企业一站式移动化办公,云管理解决方案</p>
+<ol start="5">
+<li><a href="https://www.zhihu.com">知乎</a></li>
+</ol>
+<p>可信赖的问答社区,以让每个人高效获得可信赖的解答为使命。并提供知乎专栏，随心写作，自由表达。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[花草知识APP推荐]]></title>
+        <id>https://udzhou.github.io/post/qwMhHpEho</id>
+        <link href="https://udzhou.github.io/post/qwMhHpEho">
+        </link>
+        <updated>2019-05-21T07:07:28.000Z</updated>
+        <summary type="html"><![CDATA[<p>分享几个对于爱花的小伙伴超实用的APP哟，日常认花识花，超养眼的美图，各种花艺小知识分分钟全get</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>分享几个对于爱花的小伙伴超实用的APP哟，日常认花识花，超养眼的美图，各种花艺小知识分分钟全get</p>
+<!-- more --> 
+<ol>
+<li>形色</li>
+</ol>
+<p><img src="https://udzhou.github.io/post-images/1558422753079.jpg" alt="" loading="lazy"><br>
+春天到了，大家出去玩，会看到各种各样不认识的植物，就会燃起熊熊的求知欲。形色这款APP就能给你安排的明明白白的。（PS：懒得下APP的话，也有同款微信小程序，灰常方便）</p>
+<p>形色的拍照识花功能非常好用，我测试过二十多种花，正确率还比较高，即使识别的第一结果不对，正确答案也基本在候选的几个里面。如果都不对的话，还可以上传等高手来鉴定。而且，识别后可以查看花材的相关知识，很有料~</p>
+<ol start="2">
+<li>花田小憩</li>
+</ol>
+<p><img src="https://udzhou.github.io/post-images/1558422983139.jpg" alt="" loading="lazy"><br>
+这是一款需要高分安利的APP，里面的东西实在太丰富了。总的来说，是一个比较综合的花艺&amp;生活美学分享的平台。首页的专题分类，包括花艺学堂、园艺花园、家具搭配、婚嫁、植物百科，花店地图、匠人馆、诗意生活8个板块。</p>
+<p>每一个分类下都非常丰富哦，以植物百科为例 <img src="https://udzhou.github.io/post-images/1558423253338.jpg" alt="" loading="lazy"></p>
+<ol start="3">
+<li>爱花草</li>
+</ol>
+<p>这个是比较适合爱养绿植，尤其是爱养多肉的小伙伴用的一款APP。</p>
+<p>随便点开某一个品种的多肉，都会有很多基本知识，养护也很齐全。看下面的截图，真的好全，连春夏秋冬4个不同季节浇水的要点也都写到啦~ <img src="https://udzhou.github.io/post-images/1558423349381.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[阿里云ECS开启shadowsocks失败解决办法]]></title>
+        <id>https://udzhou.github.io/post/mmPSIVJWt</id>
+        <link href="https://udzhou.github.io/post/mmPSIVJWt">
+        </link>
+        <updated>2019-04-17T01:42:30.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>安装shadowsocks请参照官网流程<pre><code>// github地址
+// https://github.com/shadowsocks/shadowsocks/tree/master
+</code></pre>
+</li>
+<li>配置文件里server一定要写成&quot;0.0.0.0&quot;,配置参考如下：<pre><code>{
+		&quot;server&quot;: &quot;0.0.0.0&quot;, // 一定要这样
+		&quot;server_port&quot;: 6666, // 这里对应端口号，第三步要设置
+		&quot;local_address&quot;: &quot;127.0.0.1&quot;,
+		&quot;local_port&quot;: 1080,
+		&quot;password&quot;: &quot;123456&quot;,
+		&quot;timeout&quot;: 600,
+		&quot;method&quot;: &quot;aes-256-cfb&quot;
+}
+</code></pre>
+</li>
+<li>ECS有安全组规则，请配置打开你配置的端口</li>
+<li>如果启动时有如下报错 AttributeError: /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1: undefined symbol: EVP_CIPHER_CTX_cleanup<pre><code>	load_openssl()
+	File &quot;/usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py&quot;, line 52, in load_openssl
+		libcrypto.EVP_CIPHER_CTX_cleanup.argtypes = (c_void_p,)
+	File &quot;/usr/lib/python2.7/ctypes/__init__.py&quot;, line 379, in __getattr__
+		func = self.__getitem__(name)
+	File &quot;/usr/lib/python2.7/ctypes/__init__.py&quot;, line 384, in __getitem__
+		func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1: undefined symbol: EVP_CIPHER_CTX_cleanup
+</code></pre>
+</li>
+</ol>
+<p>仔细查看报错原因:在Python2.7中的openssl文件中,下面这个函数没有定义,具体就是这个哥们: EVP_CIPHER_CTX_cleanup</p>
+<p>更深层的是是由于在openssl1.1.0版本中，废弃了EVP_CIPHER_CTX_cleanup函数,要用这个函数EVP_CIPHER_CTX_reset()代替;</p>
+<p>解决办法</p>
+<p>打开openssl文件</p>
+<p>用vim打开文件：((以下路径可以根据自己的系统情况自行修改))</p>
+<p>vim /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py</p>
+<p>搜索关键字并修改</p>
+<p>直接搜索关键字:EVP_CIPHER_CTX_cleanup,一共有2处;</p>
+<p>进入编辑模式将</p>
+<p>libcrypto.EVP_CIPHER_CTX_cleanup.argtypes = (c_void_p,)</p>
+<p>改为</p>
+<p>libcrypto.EVP_CIPHER_CTX_reset.argtypes = (c_void_p,)</p>
+<p>其实就是把 cleanup 改为reset,就可以了;</p>
+<p>保存并退出,重新启动就行;</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[centos下mariadb启动没反应]]></title>
+        <id>https://udzhou.github.io/post/IGTTIOUZK</id>
+        <link href="https://udzhou.github.io/post/IGTTIOUZK">
+        </link>
+        <updated>2019-04-17T01:41:47.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>mariadb安装</li>
+</ol>
+<pre><code>yum -y install mariadb mariadb-server // 安装
+yum -y install mariadb mariadb-server-5.5.56 // 安装指定版本
+yum  remove mariadb mariadb-server // 删除
+systemctl restart mariadb // 重启
+</code></pre>
+<ol start="2">
+<li>mariadb启动失败</li>
+</ol>
+<ul>
+<li>mysql.sock丢失</li>
+<li>Job for mariadb.service failed because a timeout was exceeded. See &quot;systemctl status mariadb.service&quot; and &quot;journalctl -xe&quot; for details.</li>
+</ul>
+<p>执行 /usr/bin/mysqld_safe &amp;</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[图片处理之裁剪、合并、压缩，以及常用软件推荐]]></title>
+        <id>https://udzhou.github.io/post/oVBRVSqor</id>
+        <link href="https://udzhou.github.io/post/oVBRVSqor">
+        </link>
+        <updated>2019-04-17T01:41:06.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>安装 <a href="http://www.imagemagick.org/script/index.php">ImageMagick</a> 图片处理软件，基本解决大多数图片处理问题
+<ul>
+<li>macOS 下通过 <a href="https://github.com/Homebrew/brew">Homebrew</a> 安装：brew install imagemagick</li>
+<li>windows 下载安装包（可以在官网找到），比如：<a href="https://www.imagemagick.org/download/binaries/ImageMagick-7.0.7-31-Q16-x64-static.exe">ImageMagick-7.0.7-31-Q16-x64-static.exe</a></li>
+</ul>
+</li>
+<li>安装后命令行会有 convert 命令来处理图片:
+<ul>
+<li>imagemagick 的 convert 命令通过 crop 参数，可以把一幅大图片分成若干块大小一样的图, 同时也可以在大图上截取一块图片来,命令格式为: convert 原始图片 -crop widthxheight+x+y 目标图片<pre><code>convert src.jpg -crop 100x100 dest.jpg // 把原始图片分割成多张小图
+// 假设src.jpg的大小是300x200,执行命令后将得到名为dest-0.jpg、dest-1.jpg...dest-5.jpg
+// 的6张大小为100x100的小图片。注意如果尺寸不是目标图片的整数倍，
+// 那么右边缘和下边缘的一部分图片就用实际尺寸
+
+convert src.jpg -crop 100x80+50+30 dest.jpg // 在原始图片上剪裁一张指定尺寸的小图
+// 在原始图片的上距离上部30像素左部50为起点的位置,分别向左向下截取一块大小为100x80的图片。
+// 如果x相对于坐标，宽度不够100，那就取实际值。
+
+// 在原始图上截取中心部分一块100x80的图片
+convert src.jpg -gravity center -crop 100x80+0+0 dest.jpg
+// 在原始图上截取右下角距离下边缘10个像素，右边缘5个像素一块100x80的图片
+convert src.jpg -gravity southeast -crop 100x80+10+5 dest.jpg
+</code></pre>
+</li>
+<li>图片格式 png 转 jpg<pre><code>convert src.png dest.jpg
+</code></pre>
+</li>
+<li>图片压缩、缩放等<pre><code>// 将图像的像素改为1024*768，注意1024与768之间是小写字母x
+convert -resize 1024x768  input.jpg   output.jpg
+// 将图像的缩减为原来的50%*50%
+convert -sample 50%x50%  input.jpg  output.jpg
+// 去除多余信息
+convert -strip input.jpg output.jpg
+// 适量调节JPG图片的压缩比会减少图片大小，肉眼并不会分辨出质量被压缩后的图片。通常75%是最佳比例
+convert -quality 75% input.jpg output.jpg
+// 旋转图片90度
+convert -rotate 90 src.jpg dest.jpg
+</code></pre>
+</li>
+</ul>
+</li>
+<li><a href="https://www.codeandweb.com/texturepacker">TexturePacker</a> 小图合成大图，节省空间，能生成不同格式，比如 cocos2dx 里的 plist 文件</li>
+<li>png 图片压缩软件：
+<ul>
+<li><a href="https://pngmini.com/">ImageAlpha</a> 只支持 macOS</li>
+<li><a href="https://tinypng.com/">tinypng</a></li>
+<li><a href="https://pngquant.org/">pngquant</a></li>
+<li><a href="http://upng.photopea.com/">upng</a></li>
+</ul>
+</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[nodejs 开发环境搭建以及sublime插件推荐]]></title>
+        <id>https://udzhou.github.io/post/upRL5--1-</id>
+        <link href="https://udzhou.github.io/post/upRL5--1-">
+        </link>
+        <updated>2019-04-17T01:40:33.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>使用 <a href="https://github.com/creationix/nvm">nvm</a> 安装 nodejs ，以及版本管理，不推荐安装包安装</li>
+<li>npm 设置<pre><code>// 由于官方 npm 地址访问过慢，故推荐淘宝源
+npm --registry https://registry.npm.taobao.org install express // 临时使用
+npm config set registry https://registry.npm.taobao.org // 持久使用
+// 配置后可通过下面方式来验证是否成功 
+npm config get registry
+
+// npm查看全局安装过的包
+npm list -g --depth 0
+</code></pre>
+</li>
+<li>安装进程管理工具pm2<pre><code>npm install -g pm2
+pm2 start index.js --name test // 启动某个项目
+pm2 logs // 查看日志
+pm2 start ecosystem.json // 配置文件启动
+{
+  /**
+   * Application configuration section
+   * http://pm2.keymetrics.io/docs/usage/application-declaration/
+   */
+  &quot;apps&quot;: [{
+  &quot;name&quot;: &quot;xx_game-1&quot;,
+  &quot;script&quot;: &quot;index.js&quot;,
+  &quot;cwd&quot;: &quot;./game&quot;,
+  &quot;watch&quot;: false,
+  &quot;ignore_watch&quot;: [&quot;node_modules&quot;, &quot;.git&quot;, &quot;.svn&quot;],
+  &quot;env&quot;: {
+    &quot;PORT&quot;: 7701,
+    &quot;ISMASTER&quot;: 1,
+    &quot;SERVID&quot;: 1
+  },
+  &quot;env_development&quot;: {},
+  &quot;exec_mode&quot;: &quot;fork&quot;,
+  &quot;merge_logs&quot;: true,
+  &quot;autorestart&quot;: false,
+  &quot;max_restarts&quot;: 1
+  }]
+}
+
+
+</code></pre>
+</li>
+<li>sublime text3 插件安装
+<ul>
+<li>先安装插件管理工具 <a href="https://packagecontrol.io/">Package Control</a> ，<a href="https://packagecontrol.io/installation">安装教程</a></li>
+<li>安装格式化代码插件 html/css/js prettify , 轻松统一格式代码</li>
+<li>安装插件 SublimeLinter 检查代码错误，并安装 SublimeLinter-jshint 检查js代码，同时需要 npm install -g jshint , 点击 SublimeLinter 用户配置如下：<pre><code>{
+    &quot;linters&quot;: {
+        &quot;jshint&quot;: {
+            &quot;@disable&quot;: false,
+            &quot;args&quot;: [
+                &quot;--config&quot;,
+                &quot;D:\\config\\jshintrc&quot; // 你的jshintrc配置路径
+            ],
+            &quot;excludes&quot;: []
+        },
+    },
+}
+
+// jshintrc 文件例子
+{
+    // 提示项定制
+    &quot;eqeqeq&quot;: false,    // 不提示使用 == 和 !== 的一般比较
+    &quot;-W041&quot;: false,     // 不提示使用 == 和 !== 与''或0的比较
+    &quot;eqnull&quot;: true,     // 不提示和 null 比较
+    &quot;sub&quot;: true,        // 不提示使用 [] 形式访问对象属性
+    &quot;node&quot;: true, // 感知nodejs
+    &quot;shadow&quot;: true,
+    &quot;loopfunc&quot;: true,
+    &quot;-W065&quot;: true,
+    &quot;-W032&quot;: true,
+    &quot;esversion&quot;: 6, // es版本
+    &quot;bitwise&quot;: true,    // 提示位操作符的使用（防止逻辑运算符笔误）
+    &quot;curly&quot;: true,      // 提示条件语句和循环语句的语句体没有使用大括号包裹
+    &quot;immed&quot;: true,      // 提示立即执行函数没有使用小括号包裹
+    &quot;latedef&quot;: &quot;nofunc&quot;,// 提示变量使用先于变量声明（但函数声明除外）
+    &quot;noarg&quot;: true,      // 提示 arguments.caller 和 arguments.callee 的使用
+    &quot;undef&quot;: true,      // 提示变量未声明就使用（跨文件全局变量请在predef中显式列出）
+    &quot;unused&quot;: true,     // 提示未使用的变量
+    // 环境感知
+    &quot;browser&quot;: true,    // 感知浏览器API，对应变量默认为已声明的，如 document, navigator, FileReader
+    &quot;jquery&quot;: true,     // 感知jQuery API
+    &quot;lastsemic&quot;: true,
+    &quot;predef&quot;: [         // 列出已知的全局变量，默认为已声明的
+        &quot;cc&quot;,
+        &quot;jsb&quot;,
+        &quot;ccui&quot;
+    ]
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<p>5.常用npm包推荐</p>
+<pre><code>{
+      &quot;async&quot;: &quot;^2.1.4&quot;,
+      &quot;ioredis&quot;: &quot;^3.1.4&quot;,
+      &quot;jsonwebtoken&quot;: &quot;^7.1.9&quot;,
+      &quot;lodash&quot;: &quot;^4.17.2&quot;,
+      &quot;log4js&quot;: &quot;^1.0.1&quot;,
+      &quot;moment&quot;: &quot;^2.17.1&quot;,
+      &quot;mysql&quot;: &quot;^2.12.0&quot;,
+      &quot;nanoid&quot;: &quot;^0.2.0&quot;,
+      &quot;request&quot;: &quot;^2.79.0&quot;,
+      &quot;ws&quot;: &quot;^3.1.0&quot;,
+      &quot;xml2js&quot;: &quot;^0.4.19&quot;
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows下终端软件推荐（颜值第一）]]></title>
+        <id>https://udzhou.github.io/post/hRU6u2sBx</id>
+        <link href="https://udzhou.github.io/post/hRU6u2sBx">
+        </link>
+        <updated>2019-04-17T01:40:13.000Z</updated>
+        <content type="html"><![CDATA[<p>###1. <a href="https://hyper.is/">Hyper</a><br>
+各种主题非常好看：<br>
+<img src="https://upload-images.jianshu.io/upload_images/1126038-0c878e75a16e55b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="hyper-material-theme" loading="lazy"><br>
+当然少不了个性插件：<br>
+<img src="https://upload-images.jianshu.io/upload_images/1126038-47580a0b695ea20b.gif?imageMogr2/auto-orient/strip" alt="hyperpower" loading="lazy"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1126038-de5fb9b0f0338912.gif?imageMogr2/auto-orient/strip" alt="hyper-opacity" loading="lazy"><br>
+###2. <a href="http://cmder.net/">Cmder</a><br>
+<img src="https://upload-images.jianshu.io/upload_images/1126038-41a94900981911eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="透明效果" loading="lazy"></p>
+<p>##3. windows下怎么能没有bash命令，推荐安装<a href="https://github.com/bmatzelle/gow">Gow</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[安装golang包被墙解决方法]]></title>
+        <id>https://udzhou.github.io/post/FlLsnqJHJ</id>
+        <link href="https://udzhou.github.io/post/FlLsnqJHJ">
+        </link>
+        <updated>2019-04-17T01:39:28.000Z</updated>
+        <content type="html"><![CDATA[<p>1.使用ss，但要设置如下代理：</p>
+<pre><code>// 执行命令前面设置代理
+http_proxy=127.0.0.1:1080 https_proxy=127.0.0.1:1080 go get -u google.golang.org/grpc
+// 包管理dep安装
+http_proxy=127.0.0.1:1080 https_proxy=127.0.0.1:1080 dep ensure -add google.golang.org/grpc
+</code></pre>
+<p>2.使用vpn<br>
+3.如果不能翻墙，以grpc包为例：</p>
+<pre><code>// 一般都在github上有对应包源码,下载下来并重命名
+git clone https://github.com/grpc/grpc-go.git $GOPATH/src/google.golang.org/grpc
+// 然后
+go install google.golang.org/grpc
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ubuntu服务器简要设置]]></title>
+        <id>https://udzhou.github.io/post/PJIgUHYD3</id>
+        <link href="https://udzhou.github.io/post/PJIgUHYD3">
+        </link>
+        <updated>2019-04-17T01:36:12.000Z</updated>
+        <summary type="html"><![CDATA[<p>主要记录一些常用的步奏，温故而知新</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>主要记录一些常用的步奏，温故而知新</p>
+<!-- more -->
+<ol>
+<li>apt update</li>
+<li>apt install git zip</li>
+<li>安装  <strong><a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a></strong></li>
+<li>ulimit -n 查看最大文件打开数，配置 /etc/security/limits.conf ，末尾新增<pre><code>root soft nofile 65535
+root hard nofile 65535
+* soft nofile 65535
+* hard nofile 65535
+</code></pre>
+</li>
+<li>apt install nginx<pre><code>// 配置目录 /etc/nginx
+sudo /etc/init.d/nginx start // 启动
+sudo /etc/init.d/nginx  reload  // 修改配置后重新加载生效
+</code></pre>
+</li>
+<li>安装mysql，数据库字符集选择utf8mb4<pre><code>sudo apt-get install mysql-server mysql-client
+// 编辑mysql配置文件，把其中bind-address = 127.0.0.1注释了
+vim /etc/mysql/mysql.conf.d/mysqld.cnf
+[mysqld_safe]
+open_files_limit = 65535
+innodb_open_files=65535
+[mysqld]
+max_connections  = 1024
+
+vim /lib/systemd/system/mysql.service
+LimitNOFILE=65535
+LimitMEMLOCK=65535
+
+systemctl daemon-reload // 重新载入 systemd，扫描新的或有变动的单元
+/etc/init.d/mysql restart  // 重启
+
+// 常用查询设置
+set GLOBAL max_connections=1024;
+show variables like &quot;max_connections&quot;;
+show status like 'max%connections';
+show global variables like &quot;%open_files_limit%&quot;;
+show global status like 'open%';
+show global variables like 'table_open_cache';
+
+// 设置外网访问
+CREATE USER 'pig'@'%' IDENTIFIED BY '123456';
+GRANT ALL ON *.* TO 'pig'@'%'; 
+</code></pre>
+</li>
+<li>安装redis<pre><code>sudo apt-get install redis-server
+// bind 127.0.0.1 ::1 把后面 ::1去掉，不然肯能启动不了
+sudo vim /etc/redis/redis.conf
+sudo /etc/init.d/redis-server restart
+</code></pre>
+</li>
+<li>常用命令<pre><code>ps -aux | grep mysql // 查看mysql进程
+more /proc/20750/limits // 查看mysql 限制，20750是mysql进程id
+netstat -an | grep 3306 // 查看mysql网络监听状态
+</code></pre>
+</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[网易严选 黑枸杞]]></title>
+        <id>https://udzhou.github.io/post/wang-yi-yan-xuan-hei-gou-qi</id>
+        <link href="https://udzhou.github.io/post/wang-yi-yan-xuan-hei-gou-qi">
+        </link>
+        <updated>2019-04-16T09:41:06.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://upload-images.jianshu.io/upload_images/1126038-6cc3e886c198b377.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="黑果枸杞" loading="lazy"><br>
+<a href="https://j.youzan.com/W6Qft9">网易严选 黑枸杞 55克*2瓶</a></p>
+<p>黑枸杞集滋补、美容、养生于一体的天然滋补佳品，其营养价值和药用价值远远的高于普通红枸杞，被称为“枸杞中的贵族”。黑枸杞富含蛋白质、脂肪、糖类、游离氨基酸、有机酸、矿物质、微量元素、生物碱、维生素等60多种人体必需的营养元素，其中钙、锌、铁等微量元素是普通红枸杞的数倍，长期食用可以滋补安神，强身健体，延年益寿，因此被誉为“软黄金”。</p>
+<figure data-type="image" tabindex="1"><img src="http://upload-images.jianshu.io/upload_images/1126038-f209e6c3d666b186.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="黑枸杞的正确吃法和适合人群" title="黑枸杞吃法-泡水" loading="lazy"></figure>
+<p>黑枸杞吃法-泡水</p>
+<p>黑枸杞是目前自然界花青素含量最高的植物，远超之前的花青素之王蓝莓，荣登真正“花青素之王”的宝座，这是红枸杞所不不能企及的。花青素有超强的抗氧化和抗自由基的功效，能够美容养颜、抵抗辐射、护眼明目、预防癌症。因此，黑枸杞可以说是一种集滋补、美容、养生三者于一体的天然滋补佳品!</p>
+<figure data-type="image" tabindex="2"><img src="http://upload-images.jianshu.io/upload_images/1126038-cd92c0908555b01d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="黑枸杞的正确吃法和适合人群" title="黑枸杞吃法-泡水" loading="lazy"></figure>
+<p>那么，黑枸杞怎样吃才科学呢?</p>
+<p>一、不要过量食用现在，很多关于黑枸杞毒性的动物实验证明，黑枸杞是非常安全的食物，里面不含任何毒素，可以长期食用。但任何滋补品都不能过量食用，黑枸杞也不例外。一般来说，健康的成年人每天吃5克左右的黑枸杞比较合适;如果想起到治疗的效果，每天最好吃20克左右，如果再过量食用就会产生一定的副作用。</p>
+<p>二、直接嚼着吃效果更好。用焦保兴黑枸杞泡水、煲汤时，其中的药效并不能完全发挥。因为受水温、浸泡时间等因素的影响，黑枸杞中只有部分起到药物效用。直接嘴嚼，对黑枸杞中营养成分的吸收会更加充分，吸收更加完整，更有利于发挥黑枸杞的保健效果。但嚼服黑枸杞时要注意，在吃的数量上最好减三分之一，否则容易滋补过度。《皇帝内经》：“少火滋气，壮火食气”，即为多补损气之意。</p>
+<p>三、黑枸杞什么人最适合吃？研究表明，黑枸杞含蛋白质、枸杞多糖、氨基酸、维生素、矿物质、微量元素等多种营养成分，比一般红枸杞更珍贵更有药用价值，更含特有的花青素OPC，红枸杞不含，所有黑枸杞最适合吃的是体质虚弱、畏寒、衰老和抵抗力差的人。而且，一定要长期坚持，每天吃一点，才能见效。脾胃虚弱、泄泻者可适量少量吃点黑枸杞。黑枸杞温热身体的效果相当强，正在感冒发烧、身体有炎症、痢疾的人最好别吃。</p>
+<figure data-type="image" tabindex="3"><img src="http://upload-images.jianshu.io/upload_images/1126038-d5c79320bf6c47bc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="黑枸杞的正确吃法和适合人群" title="黑枸杞吃法-泡水" loading="lazy"></figure>
+<p>四、几种比较靠谱的黑枸杞的正确吃法</p>
+<p>1、黑枸杞泡水喝：</p>
+<p>(1)、用冷水或温水(温度过高会破坏黑枸杞中的花青素，建议40-80度水温)冲泡。当营养成分和花青素释放完之后，部分果实会呈略透明的白色。</p>
+<p>(2)、黑枸杞在碱性水中侵泡呈现蓝色，在酸性水中侵泡呈现紫红色，所以黑枸杞用自来水冲泡会是蓝色，矿泉水冲泡是紫色。</p>
+<figure data-type="image" tabindex="4"><img src="http://upload-images.jianshu.io/upload_images/1126038-f41938c16f76563c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="黑枸杞的正确吃法和适合人群" title="黑枸杞吃法-泡水" loading="lazy"></figure>
+<p>(3)、黑枸杞冲泡后，弥漫着浓浓的蓝色或者紫色，是富含极高的花青素的缘故。等待5分钟左右即可饮用，直到把水喝清，再把黑枸杞吃掉。</p>
+<p>2、黑枸杞泡酒喝可以即泡即饮，40克黑枸杞搭配500ML酒即可，但最好是泡7天之后再饮用，这样效果更佳。</p>
+<p>3、黑枸杞嚼着吃黑枸杞既可以直接当干果吃，会有淡淡的甜涩苦感为正宗</p>
+<p>获取更多生活便利信息，请关注公众号   <em><strong><a href="https://mp.weixin.qq.com/s/ic6t8aCm9Hg9MRMMDTZ7Vw">当下生活瓶</a></strong></em><br>
+<img src="https://udzhou.github.io/post-images/1555407089611.jpg" alt="长按或扫描识别二维码" loading="lazy"></p>
+]]></content>
+    </entry>
+</feed>
