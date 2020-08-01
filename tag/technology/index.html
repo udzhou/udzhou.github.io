@@ -1,232 +1,188 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>技术瓶 | 当下生活瓶</title>
-<meta name="description" content="愿你的生活每天都有鲜花相伴，心情不好的时候，抬头瞄一眼 什么事都过去了，因为美好的生活不值得你为不好的事或人而浪费 ~ 加油 ~ 开心 ~">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://udzhou.github.io/favicon.ico?v=1576828287498">
+<link rel="shortcut icon" href="https://udzhou.github.io/favicon.ico?v=1596256236227">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://udzhou.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="技术瓶 | 当下生活瓶 - Atom Feed" href="https://udzhou.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-
+  <meta name="description" content="愿你的生活每天都有鲜花相伴，心情不好的时候，抬头瞄一眼 什么事都过去了，因为美好的生活不值得你为不好的事或人而浪费 ~ 加油 ~ 开心 ~" />
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://udzhou.github.io">
-        <img src="https://udzhou.github.io/images/avatar.png?v=1576828287498" class="site-logo">
-        <h1 class="site-title">当下生活瓶</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://udzhou.github.io">
+  <img class="avatar" src="https://udzhou.github.io/images/avatar.png?v=1596256236227" alt="">
+  </a>
+  <h1 class="site-title">
+    当下生活瓶
+  </h1>
+  <p class="site-description">
+    愿你的生活每天都有鲜花相伴，心情不好的时候，抬头瞄一眼 什么事都过去了，因为美好的生活不值得你为不好的事或人而浪费 ~ 加油 ~ 开心 ~
+  </p>
+  <div class="menu-container">
+    
       
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
+        <a href="/" class="menu">
+          首页
+        </a>
       
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
+    
       
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
+        <a href="/archives" class="menu">
+          归档
+        </a>
       
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
+    
       
-    </div>
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
+  <div class="social-container">
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
-      
-    </div>
-    <div class="site-description">
-      愿你的生活每天都有鲜花相伴，心情不好的时候，抬头瞄一眼 什么事都过去了，因为美好的生活不值得你为不好的事或人而浪费 ~ 加油 ~ 开心 ~
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/udzhou" target="_blank">小瓶子</a>
-    </div>
+    
   </div>
 </div>
 
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: 技术瓶</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://udzhou.github.io/post/mmPSIVJWt">
-                  <h2 class="post-title">阿里云ECS开启shadowsocks失败解决办法</h2>
-                </a>
-                <div class="post-date">
-                  2019-04-17 09:42:30
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://udzhou.github.io/post/IGTTIOUZK">
-                  <h2 class="post-title">centos下mariadb启动没反应</h2>
-                </a>
-                <div class="post-date">
-                  2019-04-17 09:41:47
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://udzhou.github.io/post/oVBRVSqor">
-                  <h2 class="post-title">图片处理之裁剪、合并、压缩，以及常用软件推荐</h2>
-                </a>
-                <div class="post-date">
-                  2019-04-17 09:41:06
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://udzhou.github.io/post/upRL5--1-">
-                  <h2 class="post-title">nodejs 开发环境搭建以及sublime插件推荐</h2>
-                </a>
-                <div class="post-date">
-                  2019-04-17 09:40:33
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://udzhou.github.io/post/hRU6u2sBx">
-                  <h2 class="post-title">Windows下终端软件推荐（颜值第一）</h2>
-                </a>
-                <div class="post-date">
-                  2019-04-17 09:40:13
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://udzhou.github.io/post/FlLsnqJHJ">
-                  <h2 class="post-title">安装golang包被墙解决方法</h2>
-                </a>
-                <div class="post-date">
-                  2019-04-17 09:39:28
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://udzhou.github.io/post/PJIgUHYD3">
-                  <h2 class="post-title">ubuntu服务器简要设置</h2>
-                </a>
-                <div class="post-date">
-                  2019-04-17 09:36:12
-                </div>
-                <div class="post-abstract">
-                  <p>主要记录一些常用的步奏，温故而知新</p>
-
-                </div>
-              </div>
-              
-            </article>
-          
-
-          <div class="pagination-container">
-  
-  
-</div>
-
+        <div class="current-tag-container">
+            <h2 class="title">
+                标签：# 技术瓶
+            </h2> 
         </div>
+        <div class="post-container">
+  
+    <article class="post">
+      <a href="https://udzhou.github.io/post/IGTTIOUZK/">
+        <h2 class="post-title">centos下mariadb启动没反应</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2019-04-17 09:41:47
+        </span>
+        <span>
+          1 min read
+        </span>
+        
+          <a href="https://udzhou.github.io/tag/technology/" class="post-tag">
+            # 技术瓶
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://udzhou.github.io/post/oVBRVSqor/">
+        <h2 class="post-title">图片处理之裁剪、合并、压缩，以及常用软件推荐</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2019-04-17 09:41:06
+        </span>
+        <span>
+          3 min read
+        </span>
+        
+          <a href="https://udzhou.github.io/tag/technology/" class="post-tag">
+            # 技术瓶
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://udzhou.github.io/post/upRL5--1-/">
+        <h2 class="post-title">nodejs 开发环境搭建以及sublime插件推荐</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2019-04-17 09:40:33
+        </span>
+        <span>
+          4 min read
+        </span>
+        
+          <a href="https://udzhou.github.io/tag/technology/" class="post-tag">
+            # 技术瓶
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        
+      </div>
+    </article>
+  
+    <article class="post">
+      <a href="https://udzhou.github.io/post/PJIgUHYD3/">
+        <h2 class="post-title">ubuntu服务器简要设置</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2019-04-17 09:36:12
+        </span>
+        <span>
+          2 min read
+        </span>
+        
+          <a href="https://udzhou.github.io/tag/technology/" class="post-tag">
+            # 技术瓶
+          </a>
+        
+      </div>
+      
+      <div class="post-abstract">
+        <p>主要记录一些常用的步奏，温故而知新</p>
+
+      </div>
+    </article>
+  
+</div>
+
+        <div class="pagination-container">
+  
+  
+</div>
+
+        <div class="site-footer">
+  Powered by &nbsp; <a href="">小瓶子</a>
+  <a class="rss" href="https://udzhou.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
       </div>
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-
-
   </body>
 </html>
